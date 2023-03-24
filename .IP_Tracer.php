@@ -36,19 +36,19 @@ function About() {
 
 
 EOL;
-  $getact = readline('  IP-Tracer >> ');
+  $getact = readline('  IP_Tracer >> ');
   menu();
 }
 
 function upd() {
   logo();
-  echo "\n\033[01;32mUpdating IP-Tracer.........\033[01;37m\n\n";
+  echo "\n\033[01;32mUpdating IP_Tracer.........\033[01;37m\n\n";
   sleep(1);
-  system("cd ~/ && git clone https://github.com/rajkumardusad/IP-Tracer.git");
-  system("cd ~/ && sudo git clone https://github.com/rajkumardusad/IP-Tracer.git");
-  system("cd ~/IP-Tracer && sh install");
+  system("cd ~/ && git clone https://github.com/masumkhanarfat/IP_Tracer");
+  system("cd ~/ && sudo git clone https://github.com/masumkhanarfat/IP_Tracer");
+  system("cd ~/IP_Tracer && sh install");
   logo();
-  echo "\n\033[01;32m              IP-Tracer updated !!!\033[01;37m\n";
+  echo "\n\033[01;32m              IP_Tracer updated !!!\033[01;37m\n";
   sleep(1);
   menu();
 }
@@ -59,9 +59,9 @@ function menu() {
   echo "   \033[01;32m[ \033[01;37m2 \033[01;32m] \033[01;33mTrack Your IP Address.\n";
   echo "   \033[01;32m[ \033[01;37m3 \033[01;32m] \033[01;33mAbout us.\n";
   echo "   \033[01;32m[ \033[01;37m4 \033[01;32m] \033[01;33mHelp.\n";
-  echo "   \033[01;32m[ \033[01;37m5 \033[01;32m] \033[01;33mUpdate IP-Tracer.\n";
+  echo "   \033[01;32m[ \033[01;37m5 \033[01;32m] \033[01;33mUpdate IP_Tracer.\n";
   echo "   \033[01;32m[ \033[01;37mx \033[01;32m] \033[01;33mExit \n\n\033[00m";
-  $inp = readline('  IP-Tracer >> ');
+  $inp = readline('  IP_Tracer >> ');
   if ($inp=="x" || $inp=="exit") {
     echo "\n\033[01;31m  Exiting .......\033[00m\n";
     sleep(1);
