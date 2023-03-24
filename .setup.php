@@ -5,59 +5,59 @@ class set {
     global $system;
     // removing old files
     if ($system=="termux") {
-      system("rm -rf /data/data/com.termux/files/usr/share/IP-Tracer");
-      system("rm -rf /data/data/com.termux/files/usr/bin/ip-tracer");
+      system("rm -rf /data/data/com.termux/files/usr/share/IP_Tracer");
+      system("rm -rf /data/data/com.termux/files/usr/bin/ip_tracer");
       system("rm -rf /data/data/com.termux/files/usr/bin/trace");
     } elseif ($system=="ubuntu") {
-      system("sudo rm -rf /usr/bin/ip-tracer");
+      system("sudo rm -rf /usr/bin/ip_tracer");
       system("sudo rm -rf /usr/bin/trace");
-      system("sudo rm -rf /usr/share/IP-Tracer");
+      system("sudo rm -rf /usr/share/IP_Tracer");
     } else {
-      system("rm -rf /usr/bin/ip-tracer");
+      system("rm -rf /usr/bin/ip_tracer");
       system("rm -rf /usr/bin/trace");
-      system("rm -rf /usr/share/IP-Tracer");
+      system("rm -rf /usr/share/IP_Tracer");
     }
     
     // adding bin file
     if ($system=="termux") {
-      system("mv -v modules/ip-tracer /data/data/com.termux/files/usr/bin/");
+      system("mv -v modules/ip_tracer /data/data/com.termux/files/usr/bin/");
       system("mv -v modules/trace /data/data/com.termux/files/usr/bin/");
-      system("chmod +x /data/data/com.termux/files/usr/bin/ip-tracer trace");
+      system("chmod +x /data/data/com.termux/files/usr/bin/ip_tracer trace");
       system("chmod +x /data/data/com.termux/files/usr/bin/trace");
     } elseif ($system=="ubuntu") {
       system("sudo mv -v modules/ip-tracer /usr/bin/");
       system("sudo mv -v modules/trace /usr/bin/");
-      system("sudo chmod +x /usr/bin/ip-tracer");
+      system("sudo chmod +x /usr/bin/ip_tracer");
       system("sudo chmod +x /usr/bin/trace");
     } else {
-      system("mv -v modules/ip-tracer /usr/bin/");
+      system("mv -v modules/ip_tracer /usr/bin/");
       system("mv -v modules/trace /usr/bin/");
-      system("chmod +x /usr/bin/ip-tracer");
+      system("chmod +x /usr/bin/ip_tracer");
       system("chmod +x /usr/bin/trace");
     }
 
-    // copy files from IP-Tracer to .IP-Tracer directory.
+    // copy files from IP_Tracer to .IP_Tracer directory.
     if ($system=="termux") {
-      system("mkdir /data/data/com.termux/files/usr/share/IP-Tracer");
+      system("mkdir /data/data/com.termux/files/usr/share/IP_Tracer");
       system("chmod +x * *.* .*.*");
-      system("mv -v * *.* .*.* /data/data/com.termux/files/usr/share/IP-Tracer/");
+      system("mv -v * *.* .*.* /data/data/com.termux/files/usr/share/IP_Tracer/");
     } elseif ($system=="ubuntu") {
-      system("sudo mkdir /usr/share/IP-Tracer/");
+      system("sudo mkdir /usr/share/IP_Tracer/");
       system("sudo chmod +x * *.* .*.*");
-      system("sudo mv -v * *.* .*.* /usr/share/IP-Tracer/");
+      system("sudo mv -v * *.* .*.* /usr/share/IP_Tracer/");
     } else {
-      system("mkdir /usr/share/IP-Tracer");
+      system("mkdir /usr/share/IP_Tracer");
       system("chmod +x * *.* .*.*");
-      system("mv -v * *.* .*.* /usr/share/IP-Tracer/");
+      system("mv -v * *.* .*.* /usr/share/IP_Tracer/");
     }
     
-    // removing IP-Tracer directory
+    // removing IP_Tracer directory
     if ($system=="termux") {
-      system("cd .. && rm -rf IP-Tracer");
+      system("cd .. && rm -rf IP_Tracer");
     } elseif ($system=="ubuntu") {
-      system("cd .. && sudo rm -rf IP-Tracer");
+      system("cd .. && sudo rm -rf IP_Tracer");
     } else {
-      system("cd .. && rm -rf IP-Tracer");
+      system("cd .. && rm -rf IP_Tracer");
     }
   }
   function logo() {
@@ -80,8 +80,8 @@ class set {
 \033[00m
 EOL;
 
-    if (file_exists("/usr/bin/ip-tracer") || file_exists("/data/data/com.termux/files/usr/bin/ip-tracer")) {
-      echo "\033[01;32m      IP-Tracer installed Successfully !!!\033[00m\n";
+    if (file_exists("/usr/bin/ip_tracer") || file_exists("/data/data/com.termux/files/usr/bin/ip_tracer")) {
+      echo "\033[01;32m      IP_Tracer installed Successfully !!!\033[00m\n";
       echo <<<EOL
 
 \033[01;37m ----------------------------------------------
