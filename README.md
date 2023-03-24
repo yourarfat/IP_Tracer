@@ -13,20 +13,20 @@ IP-Tracer is used to track an ip address. IP-Tracer is developed for Termux and 
 
 * `apt install git -y`
 
-* `git clone https://github.com/rajkumardusad/IP-Tracer.git`
+* `git clone https://github.com/masumkhanarfat/IP_Tracer.git`
 
-* `cd IP-Tracer`
+* `cd IP_Tracer`
 
 * `chmod +x install`
 
 * `sh install` or `./install`
 
 
-## How to use IP-Tracer
+## How to use IP_Tracer
 
 * `trace -m` to track your own ip address.
 
-* `trace -t target-ip` to track other's ip address for example `ip-tracer -t 127.0.0.1`
+* `trace -t target-ip` to track other's ip address for example `ip_tracer -t 127.0.0.1`
 
 * `trace` for more information.
 
