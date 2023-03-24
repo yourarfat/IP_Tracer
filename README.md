@@ -32,8 +32,8 @@ IP-Tracer is used to track an ip address. IP-Tracer is developed for Termux and 
 
 **OR**
 
-* `ip-tracer -m` to track your own ip address.
+* `ip_tracer -m` to track your own ip address.
 
-* `ip-tracer -t target-ip` to track other's ip address for example `ip-tracer -t 127.0.0.1`
+* `ip_tracer -t target-ip` to track other's ip address for example `ip-tracer -t 127.0.0.1`
 
-* `ip-tracer` for more information.
+* `ip_tracer` for more information.
