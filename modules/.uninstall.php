@@ -5,17 +5,17 @@ class un {
     global $system;
     // removing old files
     if ($system=="termux") {
-      system("rm -rf /data/data/com.termux/files/usr/share/IP-Tracer");
-      system("rm -rf /data/data/com.termux/files/usr/bin/ip-tracer");
+      system("rm -rf /data/data/com.termux/files/usr/share/IP_Tracer");
+      system("rm -rf /data/data/com.termux/files/usr/bin/ip_tracer");
       system("rm -rf /data/data/com.termux/files/usr/bin/trace");
     } elseif ($system=="ubuntu") {
-      system("sudo rm -rf /usr/bin/ip-tracer");
+      system("sudo rm -rf /usr/bin/ip_tracer");
       system("sudo rm -rf /usr/bin/trace");
-      system("sudo rm -rf /usr/share/IP-Tracer");
+      system("sudo rm -rf /usr/share/IP_Tracer");
     } else {
-      system("rm -rf /usr/bin/ip-tracer");
+      system("rm -rf /usr/bin/ip_tracer");
       system("rm -rf /usr/bin/trace");
-      system("rm -rf /usr/share/IP-Tracer");
+      system("rm -rf /usr/share/IP_Tracer");
     }
   }
   function logo() {
