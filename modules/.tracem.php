@@ -25,6 +25,7 @@ system("clear");
 EOL;
 
 if($data['status'] == 'success') {
+echo "\n ".$FCL."Name    ".$MCL."   ".$data['MASUM Khan Arfat'];
 echo "\n ".$FCL."IP Address    ".$MCL."   ".$data['query'];
 echo "\n ".$FCL."Country code  ".$MCL."   ".$data['countryCode'];
 echo "\n ".$FCL."Country       ".$MCL."   ".$data['country'];
