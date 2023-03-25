@@ -6,7 +6,7 @@ IP-Tracer is used to track an ip address. IP-Tracer is developed for Termux and 
 <img width="47%" src="src/Screenshot_2018-08-06-15-32-17-1.png"/>
 <img width="40%" src="src/Screenshot_2020-05-17-20-52-59-1.png"/>
 </p>
-MASUM KHAN ARFAT
+MASUM KHAN ARFAT <br>
 ## How to install IP-Tracer ?
 
 * `apt update`
